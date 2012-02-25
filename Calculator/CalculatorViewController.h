@@ -56,14 +56,15 @@
 -(IBAction)digitPressed:(UIButton *)sender;
 -(IBAction)flip;
 -(IBAction)operationPressed:(UIButton *)sender;
-//-(IBAction)publishOnFacebook;
 -(IBAction)mClear;
 -(IBAction)mStore;
 -(IBAction)mRecall;
--(IBAction)mTwoClear;
--(IBAction)mTwoStore;
--(IBAction)mTwoRecall;
 -(IBAction)pointPressed;
+
+//-(IBAction)mTwoClear;
+//-(IBAction)mTwoStore;
+//-(IBAction)mTwoRecall;
+//-(IBAction)publishOnFacebook;
 
 -(void)changeImage:(NSInteger)image;
 

@@ -28,7 +28,7 @@
 }
 
 -(IBAction)back;
--(IBAction)preview;
 -(IBAction)set;
+-(IBAction)review;
 
 @end

@@ -9,13 +9,25 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Calculator/CalculatorViewController.m"
-         timestampString = "337373591.165132"
+         timestampString = "351816887.598367"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "119"
-         endingLineNumber = "119"
+         startingLineNumber = "102"
+         endingLineNumber = "102"
          landmarkName = "-digitPressed:"
          landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Calculator/Calculator-Prefix.pch"
+         timestampString = "351647227.200519"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "14"
+         endingLineNumber = "14">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

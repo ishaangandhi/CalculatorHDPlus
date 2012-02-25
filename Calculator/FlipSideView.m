@@ -36,13 +36,11 @@
     [super viewDidLoad];
     
     backgrounds = [[NSMutableArray alloc] init];
-    [backgrounds addObject:@"Hand Crafed Wood(DVQ)"];
-    [backgrounds addObject:@"Steel"];
-    [backgrounds addObject:@"Sleek Gray"];
-    [backgrounds addObject:@"Black Smudge"];
-    [backgrounds addObject:@"Jet Black"];
-    [backgrounds addObject:@"Gray Gradient"];    
-    [backgrounds addObject:@"Grainy Black"];    
+    [backgrounds addObject:@"Black"];
+    [backgrounds addObject:@"Gray"];
+    [backgrounds addObject:@"Blue"];
+    [backgrounds addObject:@"Brown"];
+   
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView {
@@ -67,25 +65,16 @@
     [UIView commitAnimations];
     switch (curBackground) {
         case 0:
-            [background setImage:[UIImage imageNamed:@"DVQ-HandcraftedWood.png"]];
+            [background setImage:[UIImage imageNamed:@"BlackGradient.png"]];
             break;
         case 1:
-            [background setImage:[UIImage imageNamed:@"GraySmudge.png"]];
-            break;
-        case 2:
-            [background setImage:[UIImage imageNamed:@"SleekGray.png"]];
-            break;
-        case 3:
-            [background setImage:[UIImage imageNamed:@"BlackSmudge.png"]];
-            break;
-        case 4:
-            [background setImage:[UIImage imageNamed:@"JetBlack.png"]];
-            break;
-        case 5:
             [background setImage:[UIImage imageNamed:@"GreyGradient.png"]];
             break;
-        case 6:
-            [background setImage:[UIImage imageNamed:@"background.png"]];
+        case 2:
+            [background setImage:[UIImage imageNamed:@"BlueGradient.png"]];
+            break;
+        case 3:
+            [background setImage:[UIImage imageNamed:@"BrownGradient.png"]];
             break;
     }
     [UIView beginAnimations:nil context:NULL];
@@ -94,8 +83,11 @@
     [UIView commitAnimations];
 }
 
--(IBAction)preview {
+-(IBAction)review {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/us/app/calculator-hd/id495763806?mt=8"]];
 
+    
 }
 
 -(IBAction)set {

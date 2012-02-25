@@ -40,47 +40,30 @@ static NSInteger imageNumber;
     [screen setText:[NSString stringWithFormat:@"%d", index]];
     switch (index) {
         case 0:
-            [backgroundImage setImage:[UIImage imageNamed:@"DVQ-HandcraftedWood.png"]];
-            [landBackgroundImage setImage:[UIImage imageNamed:@"DVQ-HandcraftedWood.png"]];
-            [screenImage setAlpha:0.70];
-            [landScreenImage setAlpha:0.70];
+            [backgroundImage setImage:[UIImage imageNamed:@"BlackGradient.png"]];
+            [landBackgroundImage setImage:[UIImage imageNamed:@"BlackGradient.png"]];
+//            [screenImage setAlpha:0.70];
+//            [landScreenImage setAlpha:0.70];
             break;
         case 1:
-            [backgroundImage setImage:[UIImage imageNamed:@"GraySmudge.png"]];
-            [landBackgroundImage setImage:[UIImage imageNamed:@"GraySmudge.png"]];
-            [screenImage setAlpha:1.00];
-            [landScreenImage setAlpha:1.00];
-            break;
-        case 2:
-            [backgroundImage setImage:[UIImage imageNamed:@"SleekGray.png"]];
-            [landBackgroundImage setImage:[UIImage imageNamed:@"SleekGray.png"]];
-            [screenImage setAlpha:1.00];
-            [landScreenImage setAlpha:1.00];
-            break;
-        case 3:
-            [backgroundImage setImage:[UIImage imageNamed:@"BlackSmudge.png"]];
-            [landBackgroundImage setImage:[UIImage imageNamed:@"BlackSmudge.png"]];
-            [screenImage setAlpha:1.00];
-            [landScreenImage setAlpha:1.00];
-            break;
-        case 4:
-            [backgroundImage setImage:[UIImage imageNamed:@"JetBlack.png"]];
-            [landBackgroundImage setImage:[UIImage imageNamed:@"JetBlack.png"]];
-            [screenImage setAlpha:1.00];
-            [landScreenImage setAlpha:1.00];
-            
-            break;
-        case 5:
             [backgroundImage setImage:[UIImage imageNamed:@"GreyGradient.png"]];
             [landBackgroundImage setImage:[UIImage imageNamed:@"GreyGradient.png"]];
-            [screenImage setAlpha:1.00];
-            [landScreenImage setAlpha:1.00];
+//            [screenImage setAlpha:1.00];
+//            [landScreenImage setAlpha:1.00];
             break;
-        case 6:
-            [backgroundImage setImage:[UIImage imageNamed:@"background.png"]];
-            [landBackgroundImage setImage:[UIImage imageNamed:@"background.png"]];
-            [screenImage setAlpha:1.00];
-            [landScreenImage setAlpha:1.00];
+        case 2:
+            [backgroundImage setImage:[UIImage imageNamed:@"BlueGradient.png"]];
+            [landBackgroundImage setImage:[UIImage imageNamed:@"BlueGradient.png"]];
+//            [screenImage setAlpha:1.00];
+//            [landScreenImage setAlpha:1.00];
+            break;
+        case 3:
+            [backgroundImage setImage:[UIImage imageNamed:@"BrownGradient.png"]];
+            [landBackgroundImage setImage:[UIImage imageNamed:@"BrownGradient.png"]];
+//            [screenImage setAlpha:1.00];
+//            [landScreenImage setAlpha:1.00];
+            break;
+
             
             break;
     }
@@ -162,6 +145,15 @@ static NSInteger imageNumber;
     if([waitingOperation isEqual:@"^"]) {
         operand = pow(waitingOperand, operand);
     }
+    if([operation isEqual:@"√"]) {
+        operand = sqrt(operand);    
+    }
+    if([operation isEqual:@"+/-"]) {
+        operand = -operand;
+    }
+    if([operation isEqual:@"%"]) {
+        operand = operand/100;
+    }
     if([waitingOperation isEqual:@"+"]) {
         operand = waitingOperand + operand;
     }
@@ -171,7 +163,7 @@ static NSInteger imageNumber;
     if([waitingOperation isEqual:@"*"]) {
         operand = waitingOperand * operand;
     }
-    if([waitingOperation isEqual:@"/"]) {
+    if([waitingOperation isEqual:@"÷"]) {
         if (operand) {
             operand = waitingOperand / operand;
         } else {
